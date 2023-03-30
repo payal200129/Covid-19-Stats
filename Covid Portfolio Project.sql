@@ -20,7 +20,7 @@ FROM PortfolioProject..CovidDeaths
 WHERE location like '%india%'
 ORDER BY 1,2;
 
---Looking at countries with hoighest infection rate compared to Population
+--Looking at countries with highest infection rate compared to Population
 SELECT location,population,MAX(total_cases) AS HighestInfectionCount,max((total_cases/population))*100 as PercentagePopulationInfected
 FROM PortfolioProject..CovidDeaths
 --WHERE location like '%india%'
